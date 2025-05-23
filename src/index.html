@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DWMA project</title>
+  <title>Accueil - Benjamin Brihaye</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -12,22 +12,43 @@
 
   <link rel="stylesheet" href="styles/app.css">
 
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'wdu6sys',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
   <script src="scripts/app.js" defer></script>
 </head>
 <body>
 
-  <header class="header">
+  <header class="header hidden">
     <div class="header__quit">
       <img src="./assets/images/cross.svg" alt="Quit button">
     </div>
 
     <nav class="header__nav">
-      <ul class="header__ul">
-        <li class="header__buttons">ABOUT ME</li>
-        <li class="header__buttons">CASE STUDIES</li>
-        <li class="header__buttons">PROJECTS</li>
-        <li class="header__buttons">CREDITS</li>
+      <ul class="header__ul header__sections">
+        <li class="header__buttons header__buttons--aboutme">ABOUT ME</li>
+        <li class="header__buttons header__buttons--case">CASE STUDIES</li>
+        <li class="header__buttons header__buttons--projects">PROJECTS</li>
+        <li class="header__buttons header__buttons--credits">CREDITS</li>
       </ul>
+
+      <ul class="header__ul header__case hidden">
+          <li class="header__buttons header__janus">
+            JANUS
+          </li>
+
+          <li class="header__buttons header__mcdollars">
+            MCDOLLARS
+          </li>
+        </ul>
     </nav>
   </header>
 
@@ -37,13 +58,13 @@
         <img src="./assets/images/burger.svg" alt="Burger Menu">
     </div>
 
-    <section class="intro">
+    <section class="intro hidden">
       <div class="intro__page">
         <h1>Hi! My name is Benjamin</h1>
 
         <div class="intro__date">
-          <h2>20/05/2025</h2>
-          <h3>14:03</h3>
+          <h2 class="intro__fulldate">20/05/2025</h2>
+          <h2 class="intro__hour">14:03</h3>
         </div>
       </div>
     </section>
@@ -54,11 +75,11 @@
       </div>
 
       <div class="aboutme__general">
-        <h4>Surname : Benjamin</h4>
-        <h4>Name : Brihaye</h4>
-        <h4>Nickname : Benji</h4>
-        <h4>Age : 21</h4>
-        <h4>Birthday : November 6</h4>
+        <p>Surname : Benjamin<br>
+        Name : Brihaye<br>
+        Nickname : Benji<br>
+        Age : 21<br>
+        Birthday : November 6</p>
       </div>
 
       <div class="aboutme__hobbies">
@@ -69,49 +90,41 @@
       <div class="aboutme__top">
         <h4>Top 4s</h4>
 
-        <div class="aboutme__movies">
-          <h4>Movies</h4>
-          <ul>
-            <li>Titanic</li>
-            <li>Oppenheimer</li>
-            <li>Alien</li>
-            <li>Alien Covenant</li>
-          </ul>
-        </div>
+        <div class="aboutme__ranked">
+          <div class="aboutme__ranking aboutme__movies">
+            <h4>Movies</h4>
+            <ol>
+              <li>Titanic</li>
+              <li>Oppenheimer</li>
+              <li>Alien</li>
+              <li>Alien Covenant</li>
+            </ol>
+          </div>
 
-        <div class="aboutme__games">
-          <h4>Games</h4>
-          <ul>
-            <li>Omori</li>
-            <li>Minecraft</li>
-            <li>Alien Isolation</li>
-            <li>Until Dawn</li>
-          </ul>
-        </div>
+          <div class="aboutme__ranking aboutme__games">
+            <h4>Games</h4>
+            <ol>
+              <li>Omori</li>
+              <li>Minecraft</li>
+              <li>Alien Isolation</li>
+              <li>Until Dawn</li>
+            </ol>
+          </div>
 
-        <div class="aboutme__manga">
-          <h4>Mangas</h4>
-          <ul>
-            <li>Assassination Classroom</li>
-            <li>Blue Lock</li>
-            <li>Frieren</li>
-            <li>Chainsaw Man</li>
-          </ul>
+          <div class="aboutme__ranking aboutme__manga">
+            <h4>Mangas</h4>
+            <ol>
+              <li>Assassination Classroom</li>
+              <li>Blue Lock</li>
+              <li>Frieren</li>
+              <li>Chainsaw Man</li>
+            </ol>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="case hidden">
-      <div class="case__list">
-        <button class="button case__janus">
-        JANUS
-        </button>
-
-        <button class="button case__mcdollars">
-          MCDOLLARS
-        </button>
-      </div>
-
+    <section class="case">
       <div class="case__display case__display--janus">
         <h3>Project Janus - CallMeCarson</h4>
         <p>2024, lead designer and lead developer</p>
@@ -119,35 +132,35 @@
         
         <div class="janus__moodboard">
           <h4>Moodboard</h4>
-          <img src="./assets/images/moodboard-janus.png" alt="Project Janus's Moodboard" srcset="">
+          <img src="./assets/images/janus/moodboard-janus.png" alt="Project Janus's Moodboard" srcset="">
           <p>For the moodboard, I decided to use assets of CallMeCarson’s YouTube channels, his logos and banners. Colors comes from the YouTube assets and his official website. The logo is his official one. For the fonts, I used Poetsen One (which is the one he uses to subtitle his videos), and Muli (which is his website’s font).</p>
         </div>
         
         <div class="janus__assets">
           <h4>Assets</h4>
-          <img src="./assets/images/thumbnails-janus.png" alt="Thumbnail asset for project Janus" srcset="">
-          <img src="./assets/images/buttons-janus.png" alt="Buttons for project Janus" srcset="">
-          <img src="./assets/images/hover-janus.png" alt="Hover effect on buttons for project Janus" srcset="">
+          <img src="./assets/images/janus/thumbnails-janus.png" alt="Thumbnail asset for project Janus" srcset="">
+          <img src="./assets/images/janus/buttons-janus.png" alt="Buttons for project Janus" srcset="">
+          <img src="./assets/images/janus/hover-janus.png" alt="Hover effect on buttons for project Janus" srcset="">
           <p>I used a compilation of his YouTube thumbnails to use as a background image on the website and break the plain blue background.</p>
           <p>For the buttons linking to his socials, I decided for it to be mainly designed around his socials’ logos, as this is the most recognizable part of his channel, and a part of his personality. So each button contains the logo and the name he uses on this account. Hovering on the button will display a description on what he does there.</p>
         </div>
 
         <div class="janus__iteration">
           <h4>Iterations</h4>
-          <img src="./assets/images/iteration1-janus.png" alt="First iteration for project Janus" srcset="">
-          <img src="./assets/images/iteration2-janus.png" alt="Third iteration for project Janus" srcset="">
-          <img src="./assets/images/iteration3-janus.png" alt="Seventh iteration for project Janus" srcset="">
+          <img src="./assets/images/janus/iteration1-janus.png" alt="First iteration for project Janus" srcset="">
+          <img src="./assets/images/janus/iteration2-janus.png" alt="Third iteration for project Janus" srcset="">
+          <img src="./assets/images/janus/iteration3-janus.png" alt="Seventh iteration for project Janus" srcset="">
           <p>From the first draft, I decided to clean the area. On a designer side, the plain white section on a plain blue background was ugly. I decided to separate everything in different sections, so the user could breathe between them. It is also more easily readable because each sections stands out more.</p>
           <p>But the buttons also felt to white, so I decided to color them with the primary color of the logo it is tied with.</p>
         </div>
 
         <div class="janus__final">
           <h4>Final Design</h4>
-          <img src="./assets/images/final-janus.png" alt="Final design of project Janus" srcset="">
-          <img src="./assets/images/closeup1-janus.png" alt="First section of project Janus" srcset="">
-          <img src="./assets/images/closeup2-janus.png" alt="Second section of project Janus" srcset="">
-          <img src="./assets/images/closeup3-janus.png" alt="Third section of project Janus" srcset="">
-          <img src="./assets/images/closeup4-janus.png" alt="Fourth section of project Janus" srcset="">
+          <img src="./assets/images/janus/final-janus.png" alt="Final design of project Janus" srcset="">
+          <img src="./assets/images/janus/closeup1-janus.png" alt="First section of project Janus" srcset="">
+          <img src="./assets/images/janus/closeup2-janus.png" alt="Second section of project Janus" srcset="">
+          <img src="./assets/images/janus/closeup3-janus.png" alt="Third section of project Janus" srcset="">
+          <img src="./assets/images/janus/closeup4-janus.png" alt="Fourth section of project Janus" srcset="">
         </div>
 
         <button class="janus__link">VISIT WEBSITE</button>
@@ -160,16 +173,16 @@
         
         <div class="dataplay__moodboard">
           <h4>Moodboards</h4>
-          <img src="./assets/images/moodboard1-dataplay.png" alt="Asset Moodboard for Dataplay" srcset="">
-          <img src="./assets/images/moodboard2-dataplay.png" alt="Website Moodboard for Dataplay" srcset="">
+          <img src="./assets/images/dataplay/moodboard1-dataplay.png" alt="Asset Moodboard for Dataplay" srcset="">
+          <img src="./assets/images/dataplay/moodboard2-dataplay.png" alt="Website Moodboard for Dataplay" srcset="">
           <p>The first moodboard is targeted towards our art direction. We wanted something that feels retro and that reminds people of McDonald’s and money. We used the Burger King font which gives a retro 1970’s vibe. And we used some assets to create a really good retro art direction.</p>
           <p>The second moodboard was for the website. We had to make a choice, either inspiring us from fast foods website. Or inspiring us from the ordering terminal’s interfaces.</p>
         </div>
         
         <div class="dataplay__design">
           <h4>Designs</h4>
-          <img src="./assets/images/design1-dataplay.png" alt="First page's design for Dataplay" srcset="">
-          <img src="./assets/images/design2-dataplay.png" alt="Second page's design for Dataplay" srcset="">
+          <img src="./assets/images/dataplay/design1-dataplay.png" alt="First page's design for Dataplay" srcset="">
+          <img src="./assets/images/dataplay/design2-dataplay.png" alt="Second page's design for Dataplay" srcset="">
           <p>We decided to present the website in two parts. The first part present the project and the website, giving context for users. When scrolling, it also show graphs of the raw data we collected. </p>
           <p>
 The second part appears after clicking the button in the first part. On the left, the would be a listing of dates, listed as to look like the left side of an ordering terminal. On the right side, there is the ticket, which show the data for the selected year, and a visual assistance (how many Big Mac of the selected year would you need to buy today’s Big Mac).</p>
@@ -177,10 +190,10 @@ The second part appears after clicking the button in the first part. On the left
 
         <div class="dataplay__final">
           <h4>Final Design</h4>
-          <img src="./assets/images/final-dataplay.png" alt="Final design of Dataplay" srcset="">
-          <img src="./assets/images/closeup1-dataplay.png" alt="First section of Dataplay" srcset="">
-          <img src="./assets/images/closeup2-dataplay.png" alt="Second section of Dataplay" srcset="">
-          <img src="./assets/images/closeup3-dataplay.png" alt="Third section of pDataplay" srcset="">
+          <img src="./assets/images/dataplay/final-dataplay.png" alt="Final design of Dataplay" srcset="">
+          <img src="./assets/images/dataplay/closeup1-dataplay.png" alt="First section of Dataplay" srcset="">
+          <img src="./assets/images/dataplay/closeup2-dataplay.png" alt="Second section of Dataplay" srcset="">
+          <img src="./assets/images/dataplay/closeup3-dataplay.png" alt="Third section of pDataplay" srcset="">
         </div>
 
         <button class="dataplay__link">VISIT WEBSITE</button>
@@ -209,14 +222,14 @@ The second part appears after clicking the button in the first part. On the left
       <div class="projects__display projects__display--janus">
         <h3>Project Janus - CallMeCarson</h4>
         <p>The purpose of this school project was to create a website about an influencer. To make a page promoting him, then one talking about the influencer controversies and problems, and a page displaying his data.</p>
-        <img src="./assets/images/final-janus.png" alt="Final design of project Janus" srcset="">
+        <img src="./assets/images/janus/final-janus.png" alt="Final design of project Janus" srcset="">
         <button class="janus__link">VISIT WEBSITE</button>
       </div>
 
       <div class="projects__display projects__display--mcdollars">
         <h3>Project Dataplay - McDollars</h4>
         <p>Project Dataplay was a school project centered around the use of data to create an interactive experience. McDollars is centered around the Big Mac Index, the cost of its ingredients, and whether it relates to global inflation.</p>
-        <img src="./assets/images/final-dataplay.png" alt="Final design of Dataplay" srcset="">
+        <img src="./assets/images/dataplay/final-dataplay.png" alt="Final design of Dataplay" srcset="">
         <button class="dataplay__link">VISIT WEBSITE</button>
       </div>
 
