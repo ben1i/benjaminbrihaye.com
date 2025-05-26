@@ -67,6 +67,7 @@ if (window.innerWidth < 1200) {
 aboutmeButton.addEventListener('click', function() {
     if (window.innerWidth < 1200) {
         header.classList.add('hidden');
+        navButton.classList.remove('hidden');
     }
 
     aboutme.classList.remove('hidden');
@@ -85,6 +86,7 @@ caseButton.addEventListener('click', function() {
 janusButton.addEventListener('click', function() {
     if (window.innerWidth < 1200) {
         header.classList.add('hidden');
+        navButton.classList.remove('hidden');
     }
 
     caseStudy.classList.remove('hidden');
@@ -100,6 +102,7 @@ janusButton.addEventListener('click', function() {
 dataplayButton.addEventListener('click', function() {
     if (window.innerWidth < 1200) {
         header.classList.add('hidden');
+        navButton.classList.remove('hidden');
     }
 
     caseStudy.classList.remove('hidden');
@@ -120,6 +123,7 @@ projectsButton.addEventListener('click', function() {
 janusProjectButton.addEventListener('click', function() {
     if (window.innerWidth < 1200) {
         header.classList.add('hidden');
+        navButton.classList.remove('hidden');
     }
 
     caseStudy.classList.add('hidden');
@@ -137,6 +141,7 @@ janusProjectButton.addEventListener('click', function() {
 dataplayProjectButton.addEventListener('click', function() {
     if (window.innerWidth < 1200) {
         header.classList.add('hidden');
+        navButton.classList.remove('hidden');
     }
 
     caseStudy.classList.add('hidden');
@@ -154,6 +159,7 @@ dataplayProjectButton.addEventListener('click', function() {
 lolProjectButton.addEventListener('click', function() {
     if (window.innerWidth < 1200) {
         header.classList.add('hidden');
+        navButton.classList.remove('hidden');
     }
 
     caseStudy.classList.add('hidden');
@@ -171,6 +177,7 @@ lolProjectButton.addEventListener('click', function() {
 decembreProjectButton.addEventListener('click', function() {
     if (window.innerWidth < 1200) {
         header.classList.add('hidden');
+        navButton.classList.remove('hidden');
     }
     
     caseStudy.classList.add('hidden');
