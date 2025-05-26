@@ -40,7 +40,7 @@ body {
     height: 100%;
     padding: 31px;
 
-    position: fixed;
+    //position: fixed;
     z-index: 10;
 
     background-color: #FDEDD4;
@@ -134,6 +134,7 @@ body {
     position: fixed;
     top: 31px;
     left: 31px;
+    z-index: 0;
 
     img {
         cursor: pointer;
@@ -443,8 +444,23 @@ body {
 
         border-right: #000000 solid 5px;
 
+        &__nav {
+            position: sticky; // ChatGPT
+            top: 31px;
+        }
+
         &__quit {
             display: none;
+        }
+
+        &__arrow {
+            width: 100%;
+            height: fit-content;
+            margin-bottom: 62px;
+
+            img {
+                cursor: pointer;
+            } 
         }
 
         &__buttons {

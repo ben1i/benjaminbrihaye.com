@@ -1,6 +1,8 @@
 "use strict";
 
 const quitButton = document.querySelector('.header__quit img');
+const arrowButtons = document.querySelectorAll('.header__arrow img');
+const arrowButtonsDiv = document.querySelectorAll('.header__arrow');
 const navButton = document.querySelector('.intro__burger img');
 const headerSections = document.querySelector('.header__sections');
 const headerCase = document.querySelector('.header__case');
@@ -46,6 +48,7 @@ if (window.innerWidth < 1200) {
 
     quitButton.addEventListener('click', function() {
         header.classList.add('hidden');
+        navButton.classList.remove('hidden');
 
         headerSections.classList.remove('hidden');
         headerCase.classList.add('hidden');
@@ -53,6 +56,7 @@ if (window.innerWidth < 1200) {
 
     navButton.addEventListener('click', function() {
         header.classList.remove('hidden');
+        navButton.classList.add('hidden');
 
         headerCase.classList.add('hidden');
         headerSections.classList.remove('hidden');
@@ -186,4 +190,16 @@ introHour.textContent = hour + ':' + minutes;
 
 if (window.innerWidth >= 1200) {
     header.classList.remove("hidden");
+
+    arrowButtonsDiv.forEach(function(arrowDiv) {
+        arrowDiv.classList.remove('hidden');
+    });
+
+    arrowButtons.forEach(function(arrow) {
+        arrow.addEventListener('click', function() {
+            headerSections.classList.remove('hidden');
+            headerCase.classList.add('hidden');
+            headerProjects.classList.add('hidden');
+        });
+    });
 }
