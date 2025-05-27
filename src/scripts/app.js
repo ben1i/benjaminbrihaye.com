@@ -192,8 +192,8 @@ decembreProjectButton.addEventListener('click', function() {
     //credits.classList.add('hidden');
 })
 
-introDate.textContent = day + '/' + month + '/' + year;
-introHour.textContent = hour + ':' + minutes;
+//introDate.textContent = day + '/' + month + '/' + year;
+//introHour.textContent = hour + ':' + minutes;
 
 if (window.innerWidth >= 1200) {
     header.classList.remove("hidden");
