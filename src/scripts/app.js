@@ -32,8 +32,17 @@ const intro = document.querySelector('.intro');
 const aboutme = document.querySelector('.aboutme');
 const caseStudy = document.querySelector('.case');
 const projects = document.querySelector('.projects');
-//const credits = document.querySelector('.credits');
+const credits = document.querySelector('.credits');
 
+const buttons = document.querySelectorAll('header li');
+buttons.forEach(function (button) {
+    button.addEventListener('click', function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    })
+})
+
+/*
 var introDate = document.querySelector('.intro__fulldate');
 var introHour = document.querySelector('.intro__hour');
 const day = new Date().getDate();
@@ -41,6 +50,7 @@ const month = new Date().getMonth();
 const year = new Date().getFullYear();
 const hour = new Date().getHours();
 const minutes = new Date().getMinutes();
+*/
 
 intro.classList.remove("hidden");
 
@@ -75,7 +85,7 @@ aboutmeButton.addEventListener('click', function() {
     intro.classList.add('hidden');
     caseStudy.classList.add('hidden');
     projects.classList.add('hidden');
-    //credits.classList.add('hidden');
+    credits.classList.add('hidden');
 })
 
 caseButton.addEventListener('click', function() {
@@ -96,7 +106,7 @@ janusButton.addEventListener('click', function() {
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
     projects.classList.add('hidden');
-    //credits.classList.add('hidden');
+    credits.classList.add('hidden');
 })
 
 dataplayButton.addEventListener('click', function() {
@@ -112,7 +122,7 @@ dataplayButton.addEventListener('click', function() {
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
     projects.classList.add('hidden');
-    //credits.classList.add('hidden');
+    credits.classList.add('hidden');
 })
 
 projectsButton.addEventListener('click', function() {
@@ -135,7 +145,7 @@ janusProjectButton.addEventListener('click', function() {
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
     projects.classList.remove('hidden');
-    //credits.classList.add('hidden');
+    credits.classList.add('hidden');
 })
 
 dataplayProjectButton.addEventListener('click', function() {
@@ -153,7 +163,7 @@ dataplayProjectButton.addEventListener('click', function() {
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
     projects.classList.remove('hidden');
-    //credits.classList.add('hidden');
+    credits.classList.add('hidden');
 })
 
 lolProjectButton.addEventListener('click', function() {
@@ -189,7 +199,21 @@ decembreProjectButton.addEventListener('click', function() {
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
     projects.classList.remove('hidden');
-    //credits.classList.add('hidden');
+    credits.classList.add('hidden');
+})
+
+creditsButton.addEventListener('click', function() {
+    if (window.innerWidth < 1200) {
+        header.classList.add('hidden');
+        navButton.classList.remove('hidden');
+    }
+
+    aboutme.classList.add('hidden');
+
+    intro.classList.add('hidden');
+    caseStudy.classList.add('hidden');
+    projects.classList.add('hidden');
+    credits.classList.remove('hidden');
 })
 
 //introDate.textContent = day + '/' + month + '/' + year;
