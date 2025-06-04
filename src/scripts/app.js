@@ -22,10 +22,12 @@ const janusProjectButton = document.querySelector('.header__projects--janus');
 const dataplayProjectButton = document.querySelector('.header__projects--dataplay');
 const lolProjectButton = document.querySelector('.header__projects--lol');
 const decembreProjectButton = document.querySelector('.header__projects--decembre');
+const designfictionProjectButton = document.querySelector('.header__projects--designfiction');
 const janusProject = document.querySelector('.projects__display--janus');
 const dataplayProject = document.querySelector('.projects__display--mcdollars');
 const lolProject = document.querySelector('.projects__display--lol');
 const decembreProject = document.querySelector('.projects__display--decembre');
+const designfictionProject = document.querySelector('.projects__display--designfiction');
 
 const header = document.querySelector('.header');
 const intro = document.querySelector('.intro');
@@ -141,6 +143,7 @@ janusProjectButton.addEventListener('click', function() {
     dataplayProject.classList.add("hidden");
     lolProject.classList.add("hidden");
     decembreProject.classList.add("hidden");
+    designfictionProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -159,6 +162,7 @@ dataplayProjectButton.addEventListener('click', function() {
     dataplayProject.classList.remove("hidden");
     lolProject.classList.add("hidden");
     decembreProject.classList.add("hidden");
+    designfictionProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -177,6 +181,7 @@ lolProjectButton.addEventListener('click', function() {
     dataplayProject.classList.add("hidden");
     lolProject.classList.remove("hidden");
     decembreProject.classList.add("hidden");
+    designfictionProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -195,6 +200,26 @@ decembreProjectButton.addEventListener('click', function() {
     dataplayProject.classList.add("hidden");
     lolProject.classList.add("hidden");
     decembreProject.classList.remove("hidden");
+    designfictionProject.classList.add("hidden");
+
+    intro.classList.add('hidden');
+    aboutme.classList.add('hidden');
+    projects.classList.remove('hidden');
+    credits.classList.add('hidden');
+})
+
+designfictionProjectButton.addEventListener('click', function() {
+    if (window.innerWidth < 1200) {
+        header.classList.add('hidden');
+        navButton.classList.remove('hidden');
+    }
+    
+    caseStudy.classList.add('hidden');
+    janusProject.classList.add("hidden");
+    dataplayProject.classList.add("hidden");
+    lolProject.classList.add("hidden");
+    decembreProject.classList.add("hidden");
+    designfictionProject.classList.remove("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
