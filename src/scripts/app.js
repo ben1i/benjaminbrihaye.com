@@ -1,5 +1,7 @@
 "use strict";
 
+import { gsap } from "gsap";
+
 const quitButton = document.querySelector('.header__quit img');
 const arrowButtons = document.querySelectorAll('.header__arrow img');
 const arrowButtonsDiv = document.querySelectorAll('.header__arrow');
@@ -51,7 +53,9 @@ buttons.forEach(function (button) {
 
     arrowButtons.forEach(function(arrow) {
         arrow.addEventListener('click', function() {
-            btn.classList.remove('active');
+            buttons.forEach(function(btn) {
+                btn.classList.remove('active');
+            })
         })
     })
 })
@@ -107,6 +111,8 @@ caseButton.addEventListener('click', function() {
     headerSections.classList.add('hidden');
     caseDiv.classList.remove('hidden');
     caseDiv.classList.remove('hidden');
+
+    gsap.from(buttons, {x: -10000, duration: 0.5, ease: "power2.out"});
 })
 
 janusButton.addEventListener('click', function() {
@@ -144,6 +150,8 @@ dataplayButton.addEventListener('click', function() {
 projectsButton.addEventListener('click', function() {
     headerSections.classList.add('hidden');
     projectsDiv.classList.remove('hidden');
+
+    gsap.from(buttons, {x: -10000, duration: 0.5, ease: "power2.out"});
 })
 
 janusProjectButton.addEventListener('click', function() {
