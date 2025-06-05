@@ -40,6 +40,11 @@ body {
     display: none !important;
 }
 
+.active {
+    background-color: $c-text;
+    color: #FFFFFF !important;
+}
+
 .header {
     width: 100%;
     height: 100%;
@@ -394,6 +399,16 @@ body {
     }
 }
 
+.designfiction__link {
+    &:hover {
+        background-image : url('../assets/images/buttons/beeclip.gif');
+        background-size: cover;
+        background-position-y: 40%;
+
+        color: #000000;
+    }
+}
+
 .projects {
     width: 100%;
     padding: 123px 31px 31px 31px;
@@ -442,6 +457,38 @@ body {
             background-color: $c-text;
             color: #FFFFFF;
         }
+    }
+}
+
+.credits {
+    overflow-x: hidden;
+
+    padding: 31px;
+
+    h3 {
+        font-size: $step-2;
+        margin-top: 0;
+        margin-bottom: 62px;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: $step-1;
+    }
+
+    a {
+        word-break: break-all; //ChatGPT
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    li {
+        font-size: $step-0;
+        margin: 0;
     }
 }
 

@@ -52,48 +52,45 @@
         <li class="header__buttons header__buttons--projects">PROJECTS</li>
         <li class="header__buttons header__buttons--credits">CREDITS</li>
       </ul>
-
-      <ul class="header__ul header__case hidden">
-
+      
+      <div class="header__caseDiv hidden">
         <div class="header__arrow hidden">
           <img src="./assets/images/arrow.svg" alt="Go back button">
         </div>
 
-        <li class="header__buttons header__janus">
-          JANUS
-        </li>
+        <ul class="header__ul header__case">
+          <li class="header__buttons header__janus">
+            JANUS
+          </li>
+          <li class="header__buttons header__mcdollars">
+            MCDOLLARS
+          </li>
+        </ul>
+      </div>
 
-        <li class="header__buttons header__mcdollars">
-          MCDOLLARS
-        </li>
-      </ul>
-
-      <ul class="header__ul header__projects hidden">
-
+      <div class="header__projectsDiv hidden">
         <div class="header__arrow hidden">
           <img src="./assets/images/arrow.svg" alt="Go back button">
         </div>
 
-        <li class="header__buttons header__projects--janus janus__link">
-          JANUS
-        </li>
-
-        <li class="header__buttons header__projects--designfiction designfiction__link">
-          DESIGN FICTION
-        </li>
-
-        <li class="header__buttons header__projects--dataplay dataplay__link">
-          MCDOLLARS
-        </li>
-
-        <li class="header__buttons header__projects--lol lol__link">
-          LOL
-        </li>
-
-        <li class="header__buttons header__projects--decembre decembre__link">
-          DECEMBRE
-        </li>
-      </ul>
+        <ul class="header__ul header__projects">
+          <li class="header__buttons header__projects--janus janus__link">
+            JANUS
+          </li>
+          <li class="header__buttons header__projects--designfiction designfiction__link">
+            DESIGN FICTION
+          </li>
+          <li class="header__buttons header__projects--dataplay dataplay__link">
+            MCDOLLARS
+          </li>
+          <li class="header__buttons header__projects--lol lol__link">
+            LOL
+          </li>
+          <li class="header__buttons header__projects--decembre decembre__link">
+            DECEMBRE
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -112,7 +109,7 @@
 
         <div class="intro__date">
           <h2 class="intro__fulldate">Web Design Student</h2>
-          <h2 class="intro__hour">Haute Ecole Albert Jacquard</h3>
+          <h2 class="intro__hour">Haute Ecole Albert Jacquard</h2>
         </div>
       </div>
     </section>
@@ -121,6 +118,8 @@
       <div class="aboutme__image">
         <img src="./assets/images/logo.png" alt="Logo" srcset="./assets/images/@2x/logo@2x.png 2x">
       </div>
+
+      <h3 class="hidden">ABOUT ME</h3>
 
       <div class="aboutme__general">
         <p>Surname : Benjamin<br>
@@ -174,7 +173,7 @@
 
     <section class="case hidden">
       <div class="case__display case__display--janus hidden">
-        <h3>Project Janus - CallMeCarson</h4>
+        <h3>Project Janus - CallMeCarson</h3>
         <p class="case__role">2024, lead designer and lead developer</p>
         <p class="case__resume">The purpose of this school project was to create a website about an influencer. To make a page promoting him, then one talking about the influencer controversies and problems, and a page displaying his data.</p>
         
@@ -215,7 +214,7 @@
       </div>
       
       <div class="case__display case__display--dataplay hidden">
-        <h3>Project Dataplay - McDollars</h4>
+        <h3>Project Dataplay - McDollars</h3>
         <p class="case__role">2025, fetch and JavaScript developer</p>
         <p class="case__resume">Project Dataplay was a school project centered around the use of data to create an interactive experience. McDollars is centered around the Big Mac Index, the cost of its ingredients, and whether it relates to global inflation.</p>
         
@@ -251,35 +250,35 @@ The second part appears after clicking the button in the first part. On the left
     <section class="projects hidden">
 
       <div class="projects__display projects__display--janus hidden">
-        <h3>Project Janus - CallMeCarson</h4>
+        <h3>Project Janus - CallMeCarson</h3>
         <p>The purpose of this school project was to create a website about an influencer. To make a page promoting him, then one talking about the influencer controversies and problems, and a page displaying his data.</p>
         <img src="./assets/images/janus/final-janus.png" alt="Final design of project Janus" srcset="./assets/images/@2x/janus/final-janus@2x.png 2x">
         <a href="https://www.benjaminbrihaye.com/projets/janus/" class="projects__link janus__link">VISIT WEBSITE</a>
       </div>
 
       <div class="projects__display projects__display--mcdollars hidden">
-        <h3>Project Dataplay - McDollars</h4>
+        <h3>Project Dataplay - McDollars</h3>
         <p>Project Dataplay was a school project centered around the use of data to create an interactive experience. McDollars is centered around the Big Mac Index, the cost of its ingredients, and whether it relates to global inflation.</p>
         <img src="./assets/images/dataplay/final-dataplay.png" alt="Final design of Dataplay" srcset="./assets/images/@2x/dataplay/final-dataplay@2x.png 2x">
         <a href="https://www.benjaminbrihaye.com/projets/mcdollars/" class="projects__link dataplay__link">VISIT WEBSITE</a>
       </div>
 
       <div class="projects__display projects__display--lol hidden">
-        <h3>Project RUX - Lay Out Your Layout</h4>
+        <h3>Project RUX - Lay Out Your Layout</h3>
         <p>Lay Out Your Layout (LOL) was part of Project RUX, a project targeted at improving the Web Design classroom a better place to study. LOL is a website made into a terminal, it is an index of websites that students could use to improve themselves in any area of Web Design</p>
         <img src="./assets/images/final-lol.png" alt="Final design of Lay Out Your Layout" srcset="./assets/images/@2x/final-lol@2x.png 2x">
         <a href="https://www.benjaminbrihaye.com/projets/lol/" class="projects__link lol__link">VISIT WEBSITE</a>
       </div>
 
       <div class="projects__display projects__display--decembre hidden">
-        <h3>Project Decembre - La Main Gauche de la Nuit</h4>
+        <h3>Project Decembre - La Main Gauche de la Nuit</h3>
         <p>Project Decembre was a project targeted at creating a landing page to buy a product, which we had to choose from a list. My project was around the book “La Main Gauche de la Nuit“ Ursule K. Le Gain.</p>
         <img src="./assets/images/final-decembre.png" alt="Final design of Decembre" srcset="./assets/images/@2x/final-decembre@2x.png 2x">
         <a href="https://www.benjaminbrihaye.com/projets/decembre/" class="projects__link decembre__link">VISIT WEBSITE</a>
       </div>
 
       <div class="projects__display projects__display--designfiction hidden">
-        <h3>Project Design Fiction - KEB</h4>
+        <h3>Project Design Fiction - KEB</h3>
         <p>Project Design Fiction is a project asking us to think about an idea from the near future and doing a website about it. I decided to do something about robotic bees. KEB is a fictional website about a rebel group against those robotic bees.</p>
         <img src="./assets/images/designfiction.png" alt="Final design of Design Fiction" srcset="./assets/images/@2x/designfiction@2x.png 2x">
         <a href="https://www.benjaminbrihaye.com/projets/designfiction/" class="projects__link designfiction__link">VISIT WEBSITE</a>
@@ -287,7 +286,7 @@ The second part appears after clicking the button in the first part. On the left
     </section>
 
     <section class="credits hidden">
-      <h3>Credits</h4>
+      <h3>Credits</h3>
 
       <div class="credits__div credits__homepage">
         <h4>Homepage</h4>
@@ -319,7 +318,7 @@ The second part appears after clicking the button in the first part. On the left
           <li>Text written by me, then corrected by ChatGPT, then rewritten by me. Example prompt (<b>Voici un texte que j'ai écrit. Dans le prochain message, je t'enverrai un autre texte. J'aimerais que tu l'adaptes au ton du premier texte. // Text //</b>) -> (<b>Voici le second texte : // Text //</b>)</li>
           <li>KEB Logo generated by the Photoshop AI. Prompt not determined.</li>
           <li>All images are AI generated by Google’s AI Gemini.</li>
-          <li>ChatGPT used in code for an ‘active’ state. Prompt (<b>//code // Pourquoi mon <li> avec la classe ".active" ne reçoit pas le style ?</b>)</li>
+          <li>ChatGPT used in code for an ‘active’ state. Prompt (<b>//code // Pourquoi mon "li" avec la classe ".active" ne reçoit pas le style ?</b>)</li>
           <li>ChatGPT used in code for a div in “height: fit-content” that wasn’t fitting to content. Prompt (<b>//code // Je possède cette div avec une image à l'intérieur, la largeur est bien adaptée au contenu, mais la hauteur est légèrement plus grande. Pourquoi ?</b>)</li>
         </ul>
       </div>

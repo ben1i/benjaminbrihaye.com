@@ -5,13 +5,13 @@ const arrowButtons = document.querySelectorAll('.header__arrow img');
 const arrowButtonsDiv = document.querySelectorAll('.header__arrow');
 const navButton = document.querySelector('.intro__burger img');
 const headerSections = document.querySelector('.header__sections');
-const headerCase = document.querySelector('.header__case');
-const headerProjects = document.querySelector('.header__projects');
+const caseDiv = document.querySelector('.header__caseDiv');
+const projectsDiv = document.querySelector('.header__projectsDiv');
 
 const aboutmeButton = document.querySelector('.header__buttons--aboutme');
 const caseButton = document.querySelector('.header__buttons--case');
 const projectsButton = document.querySelector('.header__buttons--projects');
-const creditsButton = document.querySelector('.header__buttons--credits');
+const creditsButton = document.querySelector('.header__buttons--credits');;
 
 const janusButton = document.querySelector('.header__janus');
 const dataplayButton = document.querySelector('.header__mcdollars');
@@ -41,6 +41,18 @@ buttons.forEach(function (button) {
     button.addEventListener('click', function() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active');
+        })
+
+        button.classList.add('active');
+    })
+
+    arrowButtons.forEach(function(arrow) {
+        arrow.addEventListener('click', function() {
+            btn.classList.remove('active');
+        })
     })
 })
 
@@ -63,16 +75,16 @@ if (window.innerWidth < 1200) {
         navButton.classList.remove('hidden');
 
         headerSections.classList.remove('hidden');
-        headerCase.classList.add('hidden');
+        caseDiv.classList.add('hidden');
     });
 
     navButton.addEventListener('click', function() {
         header.classList.remove('hidden');
         navButton.classList.add('hidden');
 
-        headerCase.classList.add('hidden');
+        caseDiv.classList.add('hidden');
         headerSections.classList.remove('hidden');
-        headerProjects.classList.add('hidden');
+        projectsDiv.classList.add('hidden');
     })
 }
 
@@ -86,13 +98,15 @@ aboutmeButton.addEventListener('click', function() {
 
     intro.classList.add('hidden');
     caseStudy.classList.add('hidden');
+    caseDiv.classList.add('hidden');
     projects.classList.add('hidden');
     credits.classList.add('hidden');
 })
 
 caseButton.addEventListener('click', function() {
     headerSections.classList.add('hidden');
-    headerCase.classList.remove('hidden');
+    caseDiv.classList.remove('hidden');
+    caseDiv.classList.remove('hidden');
 })
 
 janusButton.addEventListener('click', function() {
@@ -129,7 +143,7 @@ dataplayButton.addEventListener('click', function() {
 
 projectsButton.addEventListener('click', function() {
     headerSections.classList.add('hidden');
-    headerProjects.classList.remove('hidden');
+    projectsDiv.classList.remove('hidden');
 })
 
 janusProjectButton.addEventListener('click', function() {
@@ -139,6 +153,7 @@ janusProjectButton.addEventListener('click', function() {
     }
 
     caseStudy.classList.add('hidden');
+    caseDiv.classList.add('hidden');
     janusProject.classList.remove("hidden");
     dataplayProject.classList.add("hidden");
     lolProject.classList.add("hidden");
@@ -158,6 +173,7 @@ dataplayProjectButton.addEventListener('click', function() {
     }
 
     caseStudy.classList.add('hidden');
+    caseDiv.classList.add('hidden');
     janusProject.classList.add("hidden");
     dataplayProject.classList.remove("hidden");
     lolProject.classList.add("hidden");
@@ -177,6 +193,7 @@ lolProjectButton.addEventListener('click', function() {
     }
 
     caseStudy.classList.add('hidden');
+    caseDiv.classList.add('hidden');
     janusProject.classList.add("hidden");
     dataplayProject.classList.add("hidden");
     lolProject.classList.remove("hidden");
@@ -196,6 +213,7 @@ decembreProjectButton.addEventListener('click', function() {
     }
     
     caseStudy.classList.add('hidden');
+    caseDiv.classList.add('hidden');
     janusProject.classList.add("hidden");
     dataplayProject.classList.add("hidden");
     lolProject.classList.add("hidden");
@@ -215,6 +233,7 @@ designfictionProjectButton.addEventListener('click', function() {
     }
     
     caseStudy.classList.add('hidden');
+    caseDiv.classList.add('hidden');
     janusProject.classList.add("hidden");
     dataplayProject.classList.add("hidden");
     lolProject.classList.add("hidden");
@@ -237,6 +256,7 @@ creditsButton.addEventListener('click', function() {
 
     intro.classList.add('hidden');
     caseStudy.classList.add('hidden');
+    caseDiv.classList.add('hidden');
     projects.classList.add('hidden');
     credits.classList.remove('hidden');
 })
@@ -254,8 +274,8 @@ if (window.innerWidth >= 1200) {
     arrowButtons.forEach(function(arrow) {
         arrow.addEventListener('click', function() {
             headerSections.classList.remove('hidden');
-            headerCase.classList.add('hidden');
-            headerProjects.classList.add('hidden');
+            caseDiv.classList.add('hidden');
+            projectsDiv.classList.add('hidden');
         });
     });
 }
