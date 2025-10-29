@@ -25,11 +25,13 @@ const dataplayProjectButton = document.querySelector('.header__projects--datapla
 const lolProjectButton = document.querySelector('.header__projects--lol');
 const decembreProjectButton = document.querySelector('.header__projects--decembre');
 const designfictionProjectButton = document.querySelector('.header__projects--designfiction');
+const grindProjectButton = document.querySelector('.header__projects--grind');
 const janusProject = document.querySelector('.projects__display--janus');
 const dataplayProject = document.querySelector('.projects__display--mcdollars');
 const lolProject = document.querySelector('.projects__display--lol');
 const decembreProject = document.querySelector('.projects__display--decembre');
 const designfictionProject = document.querySelector('.projects__display--designfiction');
+const grindProject = document.querySelector('.projects__display--grind');
 
 const header = document.querySelector('.header');
 const intro = document.querySelector('.intro');
@@ -167,6 +169,7 @@ janusProjectButton.addEventListener('click', function() {
     lolProject.classList.add("hidden");
     decembreProject.classList.add("hidden");
     designfictionProject.classList.add("hidden");
+    grindProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -187,6 +190,7 @@ dataplayProjectButton.addEventListener('click', function() {
     lolProject.classList.add("hidden");
     decembreProject.classList.add("hidden");
     designfictionProject.classList.add("hidden");
+    grindProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -207,6 +211,7 @@ lolProjectButton.addEventListener('click', function() {
     lolProject.classList.remove("hidden");
     decembreProject.classList.add("hidden");
     designfictionProject.classList.add("hidden");
+    grindProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -227,6 +232,7 @@ decembreProjectButton.addEventListener('click', function() {
     lolProject.classList.add("hidden");
     decembreProject.classList.remove("hidden");
     designfictionProject.classList.add("hidden");
+    grindProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -247,6 +253,28 @@ designfictionProjectButton.addEventListener('click', function() {
     lolProject.classList.add("hidden");
     decembreProject.classList.add("hidden");
     designfictionProject.classList.remove("hidden");
+    grindProject.classList.add("hidden");
+
+    intro.classList.add('hidden');
+    aboutme.classList.add('hidden');
+    projects.classList.remove('hidden');
+    credits.classList.add('hidden');
+})
+
+grindProjectButton.addEventListener('click', function() {
+    if (window.innerWidth < 1200) {
+        header.classList.add('hidden');
+        navButton.classList.remove('hidden');
+    }
+    
+    caseStudy.classList.add('hidden');
+    caseDiv.classList.add('hidden');
+    janusProject.classList.add("hidden");
+    dataplayProject.classList.add("hidden");
+    lolProject.classList.add("hidden");
+    decembreProject.classList.add("hidden");
+    designfictionProject.classList.add("hidden");
+    grindProject.classList.remove("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
