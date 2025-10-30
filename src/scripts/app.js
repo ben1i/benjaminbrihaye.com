@@ -40,6 +40,9 @@ const caseStudy = document.querySelector('.case');
 const projects = document.querySelector('.projects');
 const credits = document.querySelector('.credits');
 
+const logoImage = document.querySelector('.aboutme__image img');
+var timeOut = 2;
+
 const buttons = document.querySelectorAll('header li');
 buttons.forEach(function (button) {
     button.addEventListener('click', function() {
@@ -107,6 +110,15 @@ aboutmeButton.addEventListener('click', function() {
     caseDiv.classList.add('hidden');
     projects.classList.add('hidden');
     credits.classList.add('hidden');
+
+    setInterval(() => {
+        logoImage.setAttribute('src', './assets/images/logo-' + timeOut + '.png');
+        logoImage.setAttribute('srcset', './assets/images/@2x/logo-' + timeOut + '@2x.png');
+        timeOut = timeOut + 1;
+        if(timeOut > 7) {
+            timeOut = 1;
+        }
+    }, 5000);
 })
 
 caseButton.addEventListener('click', function() {
