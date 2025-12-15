@@ -136,6 +136,37 @@ body {
         background-size: cover;
         background-position-y: 45%;
     }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+
+        justify-self: flex-end;
+
+        img {
+            width: 100px;
+        }
+    }
+
+    &__link {
+        width: 100px;
+        height: 100px;
+
+        &:hover {
+            outline-offset: 2px;
+            outline-width: 3px;
+            outline-color: #000000;
+            outline-style: solid;
+
+            transition: all 0.3s ease-out;
+
+            img {
+                width: 102px;
+            }
+        }
+    }
 }
 
 .intro__burger {
