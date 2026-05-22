@@ -17,8 +17,10 @@ const creditsButton = document.querySelector('.header__buttons--credits');;
 
 const janusButton = document.querySelector('.header__janus');
 const dataplayButton = document.querySelector('.header__mcdollars');
+const tfeButton = document.querySelector('.header__tfe')
 const janusSection = document.querySelector('.case__display--janus');
 const mcdollarsSection = document.querySelector('.case__display--dataplay');
+const tfeSection = document.querySelector('.case__display--tfe')
 
 const janusProjectButton = document.querySelector('.header__projects--janus');
 const dataplayProjectButton = document.querySelector('.header__projects--dataplay');
@@ -32,6 +34,8 @@ const lolProject = document.querySelector('.projects__display--lol');
 const decembreProject = document.querySelector('.projects__display--decembre');
 const designfictionProject = document.querySelector('.projects__display--designfiction');
 const grindProject = document.querySelector('.projects__display--grind');
+const tfeProjectButton = document.querySelector('.header__projects--tfe');
+const tfeProject = document.querySelector('.projects__display--tfe');
 
 const header = document.querySelector('.header');
 const intro = document.querySelector('.intro');
@@ -138,6 +142,7 @@ janusButton.addEventListener('click', function() {
     caseStudy.classList.remove('hidden');
     janusSection.classList.remove("hidden");
     mcdollarsSection.classList.add("hidden");
+    tfeSection.classList.add('hidden');
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -154,6 +159,24 @@ dataplayButton.addEventListener('click', function() {
     caseStudy.classList.remove('hidden');
     janusSection.classList.add("hidden");
     mcdollarsSection.classList.remove("hidden");
+    tfeSection.classList.add('hidden');
+
+    intro.classList.add('hidden');
+    aboutme.classList.add('hidden');
+    projects.classList.add('hidden');
+    credits.classList.add('hidden');
+})
+
+tfeButton.addEventListener('click', function() {
+    if (window.innerWidth < 1200) {
+        header.classList.add('hidden');
+        navButton.classList.remove('hidden');
+    }
+
+    caseStudy.classList.remove('hidden');
+    janusSection.classList.add("hidden");
+    mcdollarsSection.classList.add("hidden");
+    tfeSection.classList.remove('hidden');
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -182,6 +205,7 @@ janusProjectButton.addEventListener('click', function() {
     decembreProject.classList.add("hidden");
     designfictionProject.classList.add("hidden");
     grindProject.classList.add("hidden");
+    tfeProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -203,6 +227,7 @@ dataplayProjectButton.addEventListener('click', function() {
     decembreProject.classList.add("hidden");
     designfictionProject.classList.add("hidden");
     grindProject.classList.add("hidden");
+    tfeProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -224,6 +249,7 @@ lolProjectButton.addEventListener('click', function() {
     decembreProject.classList.add("hidden");
     designfictionProject.classList.add("hidden");
     grindProject.classList.add("hidden");
+    tfeProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -245,6 +271,7 @@ decembreProjectButton.addEventListener('click', function() {
     decembreProject.classList.remove("hidden");
     designfictionProject.classList.add("hidden");
     grindProject.classList.add("hidden");
+    tfeProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -266,6 +293,7 @@ designfictionProjectButton.addEventListener('click', function() {
     decembreProject.classList.add("hidden");
     designfictionProject.classList.remove("hidden");
     grindProject.classList.add("hidden");
+    tfeProject.classList.add("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
@@ -287,6 +315,29 @@ grindProjectButton.addEventListener('click', function() {
     decembreProject.classList.add("hidden");
     designfictionProject.classList.add("hidden");
     grindProject.classList.remove("hidden");
+    tfeProject.classList.add("hidden");
+
+    intro.classList.add('hidden');
+    aboutme.classList.add('hidden');
+    projects.classList.remove('hidden');
+    credits.classList.add('hidden');
+})
+
+tfeProjectButton.addEventListener('click', function() {
+    if (window.innerWidth < 1200) {
+        header.classList.add('hidden');
+        navButton.classList.remove('hidden');
+    }
+    
+    caseStudy.classList.add('hidden');
+    caseDiv.classList.add('hidden');
+    janusProject.classList.add("hidden");
+    dataplayProject.classList.add("hidden");
+    lolProject.classList.add("hidden");
+    decembreProject.classList.add("hidden");
+    designfictionProject.classList.add("hidden");
+    grindProject.classList.add("hidden");
+    tfeProject.classList.remove("hidden");
 
     intro.classList.add('hidden');
     aboutme.classList.add('hidden');
