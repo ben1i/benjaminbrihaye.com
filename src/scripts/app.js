@@ -47,6 +47,16 @@ const credits = document.querySelector('.credits');
 const logoImage = document.querySelector('.aboutme__image img');
 var timeOut = 2;
 
+const age = document.querySelector('.aboutme__age');
+
+function calculate_age(dob) {
+    var diff_ms = Date.now() - dob.getTime();
+    var age_dt = new Date(diff_ms);
+
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+age.textContent = calculate_age(new Date(2003, 10, 6))
+
 const buttons = document.querySelectorAll('header li');
 buttons.forEach(function (button) {
     button.addEventListener('click', function() {
