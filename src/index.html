@@ -275,6 +275,24 @@ The second part appears after clicking the button in the first part. On the left
           <p class="tfe__paragraph">I remade the OMORI dialog box by myself in Figma and created multiple instances of my experience to see if moving on the map and changing map was possible.</p>
         </div>
 
+        <div class="tfe__development">
+          <h4>Development</h4>
+          <img class="tfe__leaflet" src="./assets/images/tfe/tfe-leaflet.webp" alt="Front page of Leaflet" srcset="./assets/images/@2x/tfe/tfe-leaflet@2x.webp 2x">
+          <p class="case__margin">For this project, I used a JavaScript library named Leaflet. Leaflet is a popular library used for creating interactive maps. Ding, ding, ding, that’s exactly what I needed. And in fact, you can import custom images as maps, markers, or interactions.</p>
+          <p class="tfe__paragraph">So, I first downloaded every image I needed for the map, and created a JSON that would contain all the info needed by Leaflet to adapt the map. I chose to use JSON because of the number of maps needed, it would’ve looked untidy in JavaScript.</p>
+          <p class="tfe__paragraph">For each map in the JSON, I had to write: the name of the map, the path to image, its size, then the “exits” (markers for changing map) with, for each exits, its coordinates, where it leads to, and the coordinates where it should takes us in the next map. There’s also an “interaction” part for maps where an interaction for a quest is present: for each interaction, its name, the path to the image and its coordinates (difficult part as you have to put two sets of coordinates tied to the coordinates and the size of the image).</p>
+          <img class="tfe__code" src="./assets/images/tfe/tfe-code.webp" alt="Example of the JSON code for one map" srcset="./assets/images/@2x/tfe/tfe-code@2x.webp 2x">
+          <p class="case__margin">All of this is imported in the JS where I can play with the conditions: depending on your progression on the game, some quests are not available to do, some parts of the map are not available, etc.</p>
+          <p class="tfe__paragraph">So in the beginning when joining the site, I decided to add a little form to know exactly where in the game you stand. I made a little settings box so that you can change your answers later on. Everything you do is stored in the LocalStorage (current map, location on the map, and your answers to the form, your current quest and your current step in this quest), so, when you go back on the website, you are just exactly where you left from.</p>
+        </div>
+
+        <div class="tfe__quests">
+          <h4>The Quests</h4>
+          <p class="case__margin">Now for the quests, I regret I can’t show any code because it’s too long. I had two options, either I try making an algorithm I didn’t know about two weeks before the project’s due date (Breadth-finding path), or either code something I knew I could do but it would look terrible in the JSON.</p>
+          <p class="tfe__paragraph">But for the time I had left, I decided to go for the latter. For each quest, I had to do every step of the quests. And for every step of the quest, I had to write, for each single map, where the player needed to go and a splash text to help the player find the path. For your information, one step for one quest was about 300 lines of JSON.</p>
+          <p class="tfe__paragraph">Now the second problem I had was that, at the beginning of my project, I wanted an arrow pointing to the exits people had to take for their quests, wherever they were on the current map. And I found what I thought to be a nice little Leaflet plugin named Leaflet.EdgeArrows. Long story short, it doesn’t work quite well, even though I thought it was. The arrows were visible in some map, but not on all maps. Which is pretty inconvenient given the fact that some of these maps are gigantic. So I gave up on that idea and stuck with a different colored arrow on the exit and a splash text to navigate the user.</p>
+        </div>
+
         <div class="tfe__final">
           <h4>Final Design</h4>
           <img class="tfe__page" src="./assets/images/tfe/inside.webp" alt="SideQuest-OMORI's website" srcset="./assets/images/@2x/tfe/inside@2x.webp 2x">
