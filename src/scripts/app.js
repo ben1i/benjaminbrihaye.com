@@ -126,8 +126,8 @@ aboutmeButton.addEventListener('click', function() {
     credits.classList.add('hidden');
 
     setInterval(() => {
-        logoImage.setAttribute('src', './assets/images/logo-' + timeOut + '.png');
-        logoImage.setAttribute('srcset', './assets/images/@2x/logo-' + timeOut + '@2x.png');
+        logoImage.setAttribute('src', './assets/images/logo-' + timeOut + '.webp');
+        logoImage.setAttribute('srcset', './assets/images/@2x/logo-' + timeOut + '@2x.webp');
         timeOut = timeOut + 1;
         if(timeOut > 7) {
             timeOut = 1;

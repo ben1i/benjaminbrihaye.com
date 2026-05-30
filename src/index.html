@@ -24,16 +24,9 @@
 
   <link rel="stylesheet" href="styles/app.css">
 
-  <script>
-    (function(d) {
-      var config = {
-        kitId: 'wdu6sys',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
   <script src="scripts/app.js" defer></script>
 </head>
@@ -125,7 +118,7 @@
 
     <section class="aboutme hidden">
       <div class="aboutme__image">
-        <img src="./assets/images/logo-1.png" alt="Logo" srcset="./assets/images/@2x/logo-1@2x.png 2x">
+        <img src="./assets/images/logo-1.webp" alt="Logo" srcset="./assets/images/@2x/logo-1@2x.webp 2x">
       </div>
 
       <h3 class="hidden">ABOUT ME</h3>
@@ -188,35 +181,35 @@
         
         <div class="janus__moodboard">
           <h4>Moodboard</h4>
-          <img src="./assets/images/janus/moodboard-janus.png" alt="Project Janus's Moodboard" srcset="./assets/images/@2x/janus/moodboard-janus@2x.png 2x">
+          <img src="./assets/images/janus/moodboard-janus.webp" alt="Project Janus's Moodboard" srcset="./assets/images/@2x/janus/moodboard-janus@2x.webp 2x">
           <p>For the moodboard, I decided to use assets of CallMeCarson’s YouTube channels, his logos and banners. Colors comes from the YouTube assets and his official website. The logo is his official one. For the fonts, I used Poetsen One (which is the one he uses to subtitle his videos), and Muli (which is his website’s font).</p>
         </div>
         
         <div class="janus__assets">
           <h4>Assets</h4>
-          <img class="janus__thumbnails" src="./assets/images/janus/thumbnails-janus.png" alt="Thumbnail asset for project Janus" srcset="./assets/images/@2x/janus/thumbnails-janus@2x.png 2x">
-          <img class="janus__buttons" src="./assets/images/janus/buttons-janus.png" alt="Buttons for project Janus" srcset="./assets/images/@2x/janus/buttons-janus@2x.png 2x">
-          <img class="janus__hover" src="./assets/images/janus/hover-janus.png" alt="Hover effect on buttons for project Janus" srcset="./assets/images/@2x/janus/hover-janus@2x.png 2x">
+          <img class="janus__thumbnails" src="./assets/images/janus/thumbnails-janus.webp" alt="Thumbnail asset for project Janus" srcset="./assets/images/@2x/janus/thumbnails-janus@2x.webp 2x">
+          <img class="janus__buttons" src="./assets/images/janus/buttons-janus.webp" alt="Buttons for project Janus" srcset="./assets/images/@2x/janus/buttons-janus@2x.webp 2x">
+          <img class="janus__hover" src="./assets/images/janus/hover-janus.webp" alt="Hover effect on buttons for project Janus" srcset="./assets/images/@2x/janus/hover-janus@2x.webp 2x">
           <p class="case__margin">I used a compilation of his YouTube thumbnails to use as a background image on the website and break the plain blue background.</p>
           <p class="janus__paragraph">For the buttons linking to his socials, I decided for it to be mainly designed around his socials’ logos, as this is the most recognizable part of his channel, and a part of his personality. So each button contains the logo and the name he uses on this account. Hovering on the button will display a description on what he does there.</p>
         </div>
 
         <div class="janus__iteration">
           <h4>Iterations</h4>
-          <img class="janus__first" src="./assets/images/janus/iteration1-janus.png" alt="First iteration for project Janus" srcset="./assets/images/@2x/janus/iteration1-janus@2x.png 2x">
-          <img class="janus__second" src="./assets/images/janus/iteration2-janus.png" alt="Third iteration for project Janus" srcset="./assets/images/@2x/janus/iteration2-janus@2x.png 2x">
-          <img class="janus__third" src="./assets/images/janus/iteration3-janus.png" alt="Seventh iteration for project Janus" srcset="./assets/images/@2x/janus/iteration3-janus@2x.png 2x">
+          <img class="janus__first" src="./assets/images/janus/iteration1-janus.webp" alt="First iteration for project Janus" srcset="./assets/images/@2x/janus/iteration1-janus@2x.webp 2x">
+          <img class="janus__second" src="./assets/images/janus/iteration2-janus.webp" alt="Third iteration for project Janus" srcset="./assets/images/@2x/janus/iteration2-janus@2x.webp 2x">
+          <img class="janus__third" src="./assets/images/janus/iteration3-janus.webp" alt="Seventh iteration for project Janus" srcset="./assets/images/@2x/janus/iteration3-janus@2x.webp 2x">
           <p class="case__margin">From the first draft, I decided to clean the area. On a designer side, the plain white section on a plain blue background was ugly. I decided to separate everything in different sections, so the user could breathe between them. It is also more easily readable because each sections stands out more.</p>
           <p class="janus__paragraph">But the buttons also felt to white, so I decided to color them with the primary color of the logo it is tied with.</p>
         </div>
 
         <div class="janus__final">
           <h4>Final Design</h4>
-          <img class="janus__complete" src="./assets/images/janus/final-janus.png" alt="Final design of project Janus" srcset="./assets/images/@2x/janus/final-janus@2x.png 2x">
-          <img src="./assets/images/janus/closeup1-janus.png" alt="First section of project Janus" srcset="./assets/images/@2x/janus/closeup1-janus@2x.png 2x">
-          <img src="./assets/images/janus/closeup2-janus.png" alt="Second section of project Janus" srcset="./assets/images/@2x/janus/closeup2-janus@2x.png 2x">
-          <img src="./assets/images/janus/closeup3-janus.png" alt="Third section of project Janus" srcset="./assets/images/@2x/janus/closeup3-janus@2x.png 2x">
-          <img src="./assets/images/janus/closeup4-janus.png" alt="Fourth section of project Janus" srcset="./assets/images/@2x/janus/closeup4-janus@2x.png 2x">
+          <img class="janus__complete" src="./assets/images/janus/final-janus.webp" alt="Final design of project Janus" srcset="./assets/images/@2x/janus/final-janus@2x.webp 2x">
+          <img src="./assets/images/janus/closeup1-janus.webp" alt="First section of project Janus" srcset="./assets/images/@2x/janus/closeup1-janus@2x.webp 2x">
+          <img src="./assets/images/janus/closeup2-janus.webp" alt="Second section of project Janus" srcset="./assets/images/@2x/janus/closeup2-janus@2x.webp 2x">
+          <img src="./assets/images/janus/closeup3-janus.webp" alt="Third section of project Janus" srcset="./assets/images/@2x/janus/closeup3-janus@2x.webp 2x">
+          <img src="./assets/images/janus/closeup4-janus.webp" alt="Fourth section of project Janus" srcset="./assets/images/@2x/janus/closeup4-janus@2x.webp 2x">
         </div>
 
         <a href="https://benjaminbrihaye.com/projets/janus/" target="_blank" class="case__link janus__link">VISIT WEBSITE</a>
@@ -229,16 +222,16 @@
         
         <div class="dataplay__moodboard">
           <h4>Moodboards</h4>
-          <img src="./assets/images/dataplay/moodboard1-dataplay.png" alt="Asset Moodboard for Dataplay" srcset="./assets/images/@2x/dataplay/moodboard1-dataplay@2x.png 2x">
-          <img src="./assets/images/dataplay/moodboard2-dataplay.png" alt="Website Moodboard for Dataplay" srcset="./assets/images/@2x/dataplay/moodboard2-dataplay@2x.png 2x">
+          <img src="./assets/images/dataplay/moodboard1-dataplay.webp" alt="Asset Moodboard for Dataplay" srcset="./assets/images/@2x/dataplay/moodboard1-dataplay@2x.webp 2x">
+          <img src="./assets/images/dataplay/moodboard2-dataplay.webp" alt="Website Moodboard for Dataplay" srcset="./assets/images/@2x/dataplay/moodboard2-dataplay@2x.webp 2x">
           <p class="case__margin">The first moodboard is targeted towards our art direction. We wanted something that feels retro and that reminds people of McDonald’s and money. We used the Burger King font which gives a retro 1970’s vibe. And we used some assets to create a really good retro art direction.</p>
           <p>The second moodboard was for the website. We had to make a choice, either inspiring us from fast foods website. Or inspiring us from the ordering terminal’s interfaces.</p>
         </div>
         
         <div class="dataplay__design">
           <h4>Designs</h4>
-          <img src="./assets/images/dataplay/design1-dataplay.png" alt="First page's design for Dataplay" srcset="./assets/images/@2x/dataplay/design1-dataplay@2x.png 2x">
-          <img src="./assets/images/dataplay/design2-dataplay.png" alt="Second page's design for Dataplay" srcset="./assets/images/@2x/dataplay/design2-dataplay@2x.png 2x">
+          <img src="./assets/images/dataplay/design1-dataplay.webp" alt="First page's design for Dataplay" srcset="./assets/images/@2x/dataplay/design1-dataplay@2x.webp 2x">
+          <img src="./assets/images/dataplay/design2-dataplay.webp" alt="Second page's design for Dataplay" srcset="./assets/images/@2x/dataplay/design2-dataplay@2x.webp 2x">
           <p class="case__margin">We decided to present the website in two parts. The first part present the project and the website, giving context for users. When scrolling, it also show graphs of the raw data we collected. </p>
           <p>
 The second part appears after clicking the button in the first part. On the left, the would be a listing of dates, listed as to look like the left side of an ordering terminal. On the right side, there is the ticket, which show the data for the selected year, and a visual assistance (how many Big Mac of the selected year would you need to buy today’s Big Mac).</p>
@@ -246,19 +239,19 @@ The second part appears after clicking the button in the first part. On the left
 
         <div class="dataplay__final">
           <h4>Final Design</h4>
-          <img class="dataplay__complete" src="./assets/images/dataplay/final-dataplay.png" alt="Final design of Dataplay" srcset="./assets/images/@2x/dataplay/final-dataplay@2x.png 2x">
-          <img src="./assets/images/dataplay/closeup1-dataplay.png" alt="First section of Dataplay" srcset="./assets/images/@2x/dataplay/closeup1-dataplay@2x.png 2x">
-          <img src="./assets/images/dataplay/closeup2-dataplay.png" alt="Second section of Dataplay" srcset="./assets/images/@2x/dataplay/closeup2-dataplay@2x.png 2x">
-          <img src="./assets/images/dataplay/closeup3-dataplay.png" alt="Third section of pDataplay" srcset="./assets/images/@2x/dataplay/closeup3-dataplay@2x.png 2x">
+          <img class="dataplay__complete" src="./assets/images/dataplay/final-dataplay.webp" alt="Final design of Dataplay" srcset="./assets/images/@2x/dataplay/final-dataplay@2x.webp 2x">
+          <img src="./assets/images/dataplay/closeup1-dataplay.webp" alt="First section of Dataplay" srcset="./assets/images/@2x/dataplay/closeup1-dataplay@2x.webp 2x">
+          <img src="./assets/images/dataplay/closeup2-dataplay.webp" alt="Second section of Dataplay" srcset="./assets/images/@2x/dataplay/closeup2-dataplay@2x.webp 2x">
+          <img src="./assets/images/dataplay/closeup3-dataplay.webp" alt="Third section of pDataplay" srcset="./assets/images/@2x/dataplay/closeup3-dataplay@2x.webp 2x">
         </div>
 
         <a href="https://www.benjaminbrihaye.com/projets/mcdollars/" target="_blank" class="case__link dataplay__link">VISIT WEBSITE</a>
       </div>
 
       <div class="case__display case__display--tfe hidden">
-        <h3>Thesis - SideQuest-OMORI</h3>
+        <h3>TFE - SideQuest-OMORI</h3>
         <p class="case__role">2026, lead designer and lead developer</p>
-        <p class="case__resume">This thesis is a tool created to help OMORI players through the map of the game and help them complete their side quests through an itinerary concept showing the way through the map and showing the interactions.</p>
+        <p class="case__resume">This project is a tool created to help OMORI players through the map of the game and help them complete their side quests through an itinerary concept showing the way through the map and showing the interactions.</p>
         
         <div class="tfe__before">
           <h4>Before OMORI</h4>
@@ -267,28 +260,48 @@ The second part appears after clicking the button in the first part. On the left
 
         <div class="tfe__moodboard">
           <h4>Moodboard</h4>
-          <img src="./assets/images/tfe/moodboard.png" alt="Thesis' Moodboard" srcset="./assets/images/@2x/tfe/moodboard@2x.png 2x">
-          <img src="./assets/images/tfe/background-image.png" alt="Thesis' background-image" srcset="./assets/images/@2x/tfe/background-image@2x.png 2x">
+          <img src="./assets/images/tfe/moodboard.webp" alt="Thesis' Moodboard" srcset="./assets/images/@2x/tfe/moodboard@2x.webp 2x">
+          <img src="./assets/images/tfe/background-image.webp" alt="Thesis' background-image" srcset="./assets/images/@2x/tfe/background-image@2x.webp 2x">
           <p>The moodboard pretty much gives the idea of what I was going for. I wanted a website where you could travel the map of OMORI like you were in Google Maps (dragging to move in the map and have an itinerary), combined with the assets of the game (maps, arrows, dialog box, font, etc.).</p>
         </div>
         
         <div class="tfe__assets">
           <h4>Design and assets</h4>
-          <img class="tfe__prototype" src="./assets/images/tfe/prototype.png" alt="Prototype of SideQuest-OMORI" srcset="./assets/images/@2x/tfe/prototype@2x.png 2x">
-          <img class="tfe__assets" src="./assets/images/tfe/assets.png" alt="Buttons for SideQuest-OMORI" srcset="./assets/images/@2x/tfe/assets@2x.png 2x">
-          <img class="tfe__buttons" src="./assets/images/tfe/assets2.png" alt="Buttons for SideQuest-OMORI" srcset="./assets/images/@2x/tfe/assets2@2x.png 2x">
-          <img class="tfe__testing" src="./assets/images/tfe/testing.png" alt="All tests of SideQuest-OMORI" srcset="./assets/images/@2x/tfe/testing@2x.png 2x">
-          <p class="case__margin">There are 2 versions of the game: a PC version and a console version. The PC version has a screen ratio of 4:3. But for the console version, the OMOCAT studio had to expand the ratio to 16:9. So, they added a background taking up all the space, while the game was in the middle, still at 4:3. I took these backgrounds and used them for my website: a background all over the space, with the experience in the middle as a square.</p>
+          <img class="tfe__prototype" src="./assets/images/tfe/prototype.webp" alt="Prototype of SideQuest-OMORI" srcset="./assets/images/@2x/tfe/prototype@2x.webp 2x">
+          <img class="tfe__compass" src="./assets/images/tfe/prototype-compass.webp" alt="Prototype of the compass system of SideQuest-OMORI" srcset="./assets/images/@2x/tfe/prototype-compass@2x.webp 2x">
+          <img class="tfe__firstmenu" src="./assets/images/tfe/first-menu.webp" alt="First design of the starting form" srcset="./assets/images/@2x/tfe/first-menu@2x.webp 2x">
+          <img class="tfe__dialogbox" src="./assets/images/tfe/dialogbox.webp" alt="Remake of the OMORI dialog box" srcset="./assets/images/@2x/tfe/dialogbox@2x.webp 2x">
+          <p class="case__margin">As you can see from the first 3 pictures, these were the first versions of the design. The background was different. And on the second screenshot, you can have a glimpse of the compass system that the user would see pointing in the direction of the next step.</p>
+          <p class="tfe__paragraph">And the third screenshot is a picture of the first designed starting form where the user would answer questions about their progression in the game. I decided to change this design afterward for something that looked like it belongs to the website, placing it in the middle of the map section before it loads.</p>
+          <p class="tfe__paragraph">There are 2 versions of the game: a PC version and a console version. The PC version has a screen ratio of 4:3. But for the console version, the OMOCAT studio had to expand the ratio to 16:9. So, they added a background taking up all the space, while the game was in the middle, still at 4:3. I took these backgrounds and used them for my website: a background all over the space, with the experience in the middle as a square.</p>
           <p class="tfe__paragraph">I remade the OMORI dialog box by myself in Figma and created multiple instances of my experience to see if moving on the map and changing map was possible.</p>
+        </div>
+
+        <div class="tfe__development">
+          <h4>Development</h4>
+          <img class="tfe__leaflet" src="./assets/images/tfe/tfe-leaflet.webp" alt="Front page of Leaflet" srcset="./assets/images/@2x/tfe/tfe-leaflet@2x.webp 2x">
+          <p class="case__margin">For this project, I used a JavaScript library named Leaflet. Leaflet is a popular library used for creating interactive maps. Ding, ding, ding, that’s exactly what I needed. And in fact, you can import custom images as maps, markers, or interactions.</p>
+          <p class="tfe__paragraph">So, I first downloaded every image I needed for the map, and created a JSON that would contain all the info needed by Leaflet to adapt the map. I chose to use JSON because of the number of maps needed, it would’ve looked untidy in JavaScript.</p>
+          <p class="tfe__paragraph">For each map in the JSON, I had to write: the name of the map, the path to image, its size, then the “exits” (markers for changing map) with, for each exits, its coordinates, where it leads to, and the coordinates where it should takes us in the next map. There’s also an “interaction” part for maps where an interaction for a quest is present: for each interaction, its name, the path to the image and its coordinates (difficult part as you have to put two sets of coordinates tied to the coordinates and the size of the image).</p>
+          <img class="tfe__code" src="./assets/images/tfe/tfe-code.webp" alt="Example of the JSON code for one map" srcset="./assets/images/@2x/tfe/tfe-code@2x.webp 2x">
+          <p class="case__margin">All of this is imported in the JS where I can play with the conditions: depending on your progression on the game, some quests are not available to do, some parts of the map are not available, etc.</p>
+          <p class="tfe__paragraph">So in the beginning when joining the site, I decided to add a little form to know exactly where in the game you stand. I made a little settings box so that you can change your answers later on. Everything you do is stored in the LocalStorage (current map, location on the map, and your answers to the form, your current quest and your current step in this quest), so, when you go back on the website, you are just exactly where you left from.</p>
+        </div>
+
+        <div class="tfe__quests">
+          <h4>The Quests</h4>
+          <p class="case__margin">Now for the quests, I regret I can’t show any code because it’s too long. I had two options, either I try making an algorithm I didn’t know about two weeks before the project’s due date (Breadth-finding path), or either code something I knew I could do but it would look terrible in the JSON.</p>
+          <p class="tfe__paragraph">But for the time I had left, I decided to go for the latter. For each quest, I had to do every step of the quests. And for every step of the quest, I had to write, for each single map, where the player needed to go and a splash text to help the player find the path. For your information, one step for one quest was about 300 lines of JSON.</p>
+          <p class="tfe__paragraph">Now the second problem I had was that, at the beginning of my project, I wanted an arrow pointing to the exits people had to take for their quests, wherever they were on the current map. And I found what I thought to be a nice little Leaflet plugin named Leaflet.EdgeArrows. Long story short, it doesn’t work quite well, even though I thought it was. The arrows were visible in some map, but not on all maps. Which is pretty inconvenient given the fact that some of these maps are gigantic. So I gave up on that idea and stuck with a different colored arrow on the exit and a splash text to navigate the user.</p>
         </div>
 
         <div class="tfe__final">
           <h4>Final Design</h4>
-          <img class="tfe__page" src="./assets/images/tfe/inside.png" alt="SideQuest-OMORI's website" srcset="./assets/images/@2x/tfe/inside@2x.png 2x">
-          <img class="tfe__start" src="./assets/images/tfe/start.png" alt="Starting form of SideQuest-OMORI" srcset="./assets/images/@2x/tfe/start@2x.png 2x">
-          <img class="tfe__settings" src="./assets/images/tfe/settings.png" alt="Settings of SideQuest-OMORI" srcset="./assets/images/@2x/tfe/settings@2x.png 2x">
+          <img class="tfe__page" src="./assets/images/tfe/inside.webp" alt="SideQuest-OMORI's website" srcset="./assets/images/@2x/tfe/inside@2x.webp 2x">
+          <img class="tfe__start" src="./assets/images/tfe/start.webp" alt="Starting form of SideQuest-OMORI" srcset="./assets/images/@2x/tfe/start@2x.webp 2x">
+          <img class="tfe__settings" src="./assets/images/tfe/settings.webp" alt="Settings of SideQuest-OMORI" srcset="./assets/images/@2x/tfe/settings@2x.webp 2x">
           <p class="case__margin">After changing the background and some other steps, SideQuest-OMORI was done.</p>
-          <p class="tfe__paragraph">In the beginning, the website will ask you for some information about your current progression in the game because some parts of the map and some quests might not be available. But don’t worry, you can still change your information later with the “Settings” box.</p>
+          <p class="tfe__paragraph">In the beginning, the website will ask you for some information about your current progression in the game because some parts of the map and some quests might not be available. But don’t worry, you can still change your information later with the "Settings" box.</p>
           <p class="tfe__paragraph">After that, you can freely explore the map of the game as if you were on Google Maps. You can drag to move, you can zoom or de-zoom, click on exits to change location, use Pluto’s Spaceline to teleport to a different area, etc.</p>
           <p class="tfe__paragraph">And also available, the itinerary option. Click on “Open Quest List”, choose a quest, and the website will tell you where to go and additional instructions if needed. </p>
           <p class="tfe__paragraph">This is the perfect tool to use on a secondary monitor while you're playing on your main screen.</p>
@@ -302,51 +315,51 @@ The second part appears after clicking the button in the first part. On the left
     <section class="projects hidden">
 
       <div class="projects__display projects__display--tfe hidden">
-        <h3>Thesis - SideQuest-OMORI</h3>
-        <p>This thesis is a tool created to help OMORI players through the map of the game and help them complete their side quests through an itinerary concept showing the way through the map and showing the interactions.</p>
-        <img src="./assets/images/tfe/inside.png" alt="Final design of SideQuest-OMORI" srcset="./assets/images/@2x/tfe/inside@2x.png 2x">
+        <h3>TFE - SideQuest-OMORI</h3>
+        <p>This project is a tool created to help OMORI players through the map of the game and help them complete their side quests through an itinerary concept showing the way through the map and showing the interactions.</p>
+        <img src="./assets/images/tfe/inside.webp" alt="Final design of SideQuest-OMORI" srcset="./assets/images/@2x/tfe/inside@2x.webp 2x">
         <a href="https://www.benjaminbrihaye.com/projets/sidequest-omori/" class="projects__link tfe__link">VISIT WEBSITE</a>
       </div>
 
       <div class="projects__display projects__display--grind hidden">
         <h3>Project iLab - Grind</h3>
         <p>iLab is a project about creating a game about disabilities. For Grind, we choose obesity. In Grind, you walk forward on an infinite map, avoid bad habits and monsters, and become fit. The game was made using Construct 2.</p>
-        <img src="./assets/images/grind.png" alt="Final design of project iLab" srcset="./assets/images/@2x/grind@2x.png 2x">
+        <img src="./assets/images/grind.webp" alt="Final design of project iLab" srcset="./assets/images/@2x/grind@2x.webp 2x">
         <a href="https://www.benjaminbrihaye.com/projets/grind/" class="projects__link grind__link">VISIT WEBSITE</a>
       </div>
 
       <div class="projects__display projects__display--janus hidden">
         <h3>Project Janus - CallMeCarson</h3>
         <p>The purpose of this school project was to create a website about an influencer. To make a page promoting him, then one talking about the influencer controversies and problems, and a page displaying his data.</p>
-        <img src="./assets/images/janus/final-janus.png" alt="Final design of project Janus" srcset="./assets/images/@2x/janus/final-janus@2x.png 2x">
+        <img src="./assets/images/janus/final-janus.webp" alt="Final design of project Janus" srcset="./assets/images/@2x/janus/final-janus@2x.webp 2x">
         <a href="https://www.benjaminbrihaye.com/projets/janus/" class="projects__link janus__link">VISIT WEBSITE</a>
       </div>
 
       <div class="projects__display projects__display--mcdollars hidden">
         <h3>Project Dataplay - McDollars</h3>
         <p>Project Dataplay was a school project centered around the use of data to create an interactive experience. McDollars is centered around the Big Mac Index, the cost of its ingredients, and whether it relates to global inflation.</p>
-        <img src="./assets/images/dataplay/final-dataplay.png" alt="Final design of Dataplay" srcset="./assets/images/@2x/dataplay/final-dataplay@2x.png 2x">
+        <img src="./assets/images/dataplay/final-dataplay.webp" alt="Final design of Dataplay" srcset="./assets/images/@2x/dataplay/final-dataplay@2x.webp 2x">
         <a href="https://www.benjaminbrihaye.com/projets/mcdollars/" class="projects__link dataplay__link">VISIT WEBSITE</a>
       </div>
 
       <div class="projects__display projects__display--lol hidden">
         <h3>Project RUX - Lay Out Your Layout</h3>
         <p>Lay Out Your Layout (LOL) was part of Project RUX, a project targeted at improving the Web Design classroom a better place to study. LOL is a website made into a terminal, it is an index of websites that students could use to improve themselves in any area of Web Design</p>
-        <img src="./assets/images/final-lol.png" alt="Final design of Lay Out Your Layout" srcset="./assets/images/@2x/final-lol@2x.png 2x">
+        <img src="./assets/images/final-lol.webp" alt="Final design of Lay Out Your Layout" srcset="./assets/images/@2x/final-lol@2x.webp 2x">
         <a href="https://www.benjaminbrihaye.com/projets/lol/" class="projects__link lol__link">VISIT WEBSITE</a>
       </div>
 
       <div class="projects__display projects__display--decembre hidden">
         <h3>Project Decembre - La Main Gauche de la Nuit</h3>
         <p>Project Decembre was a project targeted at creating a landing page to buy a product, which we had to choose from a list. My project was around the book “La Main Gauche de la Nuit“ Ursule K. Le Gain.</p>
-        <img src="./assets/images/final-decembre.png" alt="Final design of Decembre" srcset="./assets/images/@2x/final-decembre@2x.png 2x">
+        <img src="./assets/images/final-decembre.webp" alt="Final design of Decembre" srcset="./assets/images/@2x/final-decembre@2x.webp 2x">
         <a href="https://www.benjaminbrihaye.com/projets/decembre/" class="projects__link decembre__link">VISIT WEBSITE</a>
       </div>
 
       <div class="projects__display projects__display--designfiction hidden">
         <h3>Project Design Fiction - KEB</h3>
         <p>Project Design Fiction is a project asking us to think about an idea from the near future and doing a website about it. I decided to do something about robotic bees. KEB is a fictional website about a rebel group against those robotic bees.</p>
-        <img src="./assets/images/designfiction.png" alt="Final design of Design Fiction" srcset="./assets/images/@2x/designfiction@2x.png 2x">
+        <img src="./assets/images/designfiction.webp" alt="Final design of Design Fiction" srcset="./assets/images/@2x/designfiction@2x.webp 2x">
         <a href="https://www.benjaminbrihaye.com/projets/designfiction/" class="projects__link designfiction__link">VISIT WEBSITE</a>
       </div>
     </section>
