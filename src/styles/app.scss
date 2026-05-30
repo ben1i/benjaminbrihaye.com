@@ -783,7 +783,7 @@ body {
     .tfe__assets {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(9, auto);
         column-gap: 31px;
 
         h4 {
@@ -798,14 +798,34 @@ body {
             width: 100%;
         }
 
-        .case__margin {
+        .tfe__compass {
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+
+            width: 100%;
+        }
+
+        .tfe__firstmenu {
             grid-column: 1 / 4;
             grid-row: 4 / 5;
+
+            width: 100%;
+        }
+
+        .tfe__dialogbox {
+            grid-column: 1 / 4;
+            grid-row: 5 / 6;
+
+            width: 100%;
+        }
+
+        .case__margin {
+            grid-column: 1 / 4;
+            grid-row: 6 / 7;
         }
 
         .tfe__paragraph {
             grid-column: 1 / 4;
-            grid-row: 5 / 6;
         }
     }
 
